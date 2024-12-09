@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+ul.tareas {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 0;
+  width: fit-content;
+
+  list-style-type: none;
+}
+
+.añadir-tarea,
+.tareas>li {
+  display: inline-flex;
+  gap: 30px;
+  padding: 10px;
+
+  border: solid black 1px;
+  border-radius: 5px;
+
+  * {
+    margin: 0;
+  }
+}
