@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ahorcado {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.ahorcado .imagen {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+
+
+  &[data-errores="1"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 0% 0%;
+  }
+
+  &[data-errores="2"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 45% 0%;
+  }
+
+  &[data-errores="3"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 90% 0%;
+  }
+
+  &[data-errores="4"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 0% 92%;
+  }
+
+  &[data-errores="5"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 45% 92%;
+  }
+
+  &[data-errores="6"] {
+    background-image: url("/el-ahorcado.jpg");
+    background-position: 90% 92%;
+  }
+}
+
+.letra-intento:invalid {
+  border-color: red;
+}

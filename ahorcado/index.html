@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahorcado</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <article class="ahorcado">
+    <section class="imagen" data-errores="0"></section>
+    <section class="texto">
+      <span>
+        <p>Palabra: <span class="palabra"></span></p>
+      </span>
+      <div>
+        <label for="letra-adivinar">Adivinar:</label>
+        <input type="text" class="letra-intento" id="letra-intento" minlength="1" maxlength="1" />
+        <button class="boton-comprobar-letra">Comprobar</button>
+      </div>
+      <p class="letra-erradas">Letras erradas:</p>
+    </section>
+  </article>
+  <section id="checkWinner">
+    <p></p>
+  </section>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
